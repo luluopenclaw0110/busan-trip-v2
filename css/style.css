@@ -850,7 +850,7 @@ p {
 }
 
 .spots-nav__btn.active {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary);
   color: var(--text-light);
   border-color: var(--primary);
 }

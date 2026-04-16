@@ -187,7 +187,7 @@ p {
 }
 
 .nav-cta {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary);
   color: var(--text-light);
   font-size: 0.85rem;
   font-weight: 700;

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美饌探索 | 秋日釜山</title>
+  <meta name="description" content="探索釜山五大精選美食：札嘎其海鮮、豬肉湯飯、黑熔拉手麵、密陽血腸豬肉湯、伍班長烤肉。完整美食攻略與推薦。">
+  <meta name="theme-color" content="#0077B6">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230077B6'/><text y='.9em' font-size='80' x='50%' text-anchor='middle'>食</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ===== Food page color overrides (Busan Blue) ===== */
+    :root {
+      --primary: #0077B6;
+      --primary-dark: #005f92;
+      --primary-light: #0096D6;
+      --secondary: #1A1A2E;
+      --secondary-light: #2D2D4A;
+      --accent: #F5A623;
+      --accent-light: #FFD066;
+    }
+
+    /* Override nav/button primary colors */
+    .nav-link.active::after { background: var(--primary); }
+    .btn--primary {
+      background: var(--primary);
+      box-shadow: 0 4px 20px rgba(0, 119, 182, 0.4);
+    }
+    .btn--primary:hover {
+      background: var(--primary-light);
+      box-shadow: 0 8px 32px rgba(0, 119, 182, 0.55);
+    }
+    .spot-card__arrow { background: var(--primary); }
+    .spot-card__arrow:hover { background: var(--primary-light); }
+    .spot-info-item__icon { background: rgba(0, 119, 182, 0.08); }
+    .nav-cta {
+      background: var(--primary);
+      box-shadow: 0 2px 12px rgba(0, 119, 182, 0.35);
+    }
+    .nav-cta:hover { background: var(--primary-light); }
+    .spot-nav-btn { color: var(--primary); border-color: var(--primary); }
+    .spot-nav-btn:hover { background: var(--primary); color: #fff; }
+    .section__tag { color: var(--primary); border-color: var(--primary); }
+    .spot-card__badge { background: var(--primary); }
+    .spot-info-card__title { border-bottom-color: var(--primary); }
+    .footer__accent { color: var(--primary); }
+    .footer__links a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <span class="header__logo-dot"></span>
+          秋日釜山
+        </a>
+
+        <nav class="header__nav" id="headerNav">
+          <a href="index.html" class="nav-link">首頁</a>
+          <a href="spots.html" class="nav-link">景點探索</a>
+          <a href="food.html" class="nav-link active">美饌探索</a>
+          <a href="index.html#about-section" class="nav-link">關於釜山</a>
+          <a href="index.html" class="nav-cta">回首頁</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== SPOTS NAVIGATION TABS ===================== -->
+  <nav class="spots-nav">
+    <div class="container">
+      <div class="spots-nav__inner">
+        <a href="#jagalchi-food" class="spots-nav__btn active" data-target="jagalchi-food">🐙 札嘎其海鮮</a>
+        <a href="#galchi-gukbap" class="spots-nav__btn" data-target="galchi-gukbap">🍲 豬肉湯飯</a>
+        <a href="#heukseong" class="spots-nav__btn" data-target="heukseong">🥢 黑熔拉手麵</a>
+        <a href="#milyang" class="spots-nav__btn" data-target="milyang">🩸 密陽血腸</a>
+        <a href="#ohbansang" class="spots-nav__btn" data-target="ohbansang">🥩 伍班長烤肉</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================================ -->
+  <!-- FOOD 1: 札嘎其海鮮 -->
+  <!-- ================================================================ -->
+  <section class="spot-section" id="jagalchi-food">
+    <div class="spot-hero">
+      <div class="spot-hero__bg">
+        <img src="images/food/food_01.jpg" alt="札嘎其市場海鮮" loading="eager">
+      </div>
+      <div class="spot-hero__overlay"></div>
+      <div class="container">
+        <div class="spot-hero__content">
+          <p class="spot-hero__eyebrow">Food 01 / 五大美食</p>
+          <h1 class="spot-hero__title">札嘎其海鮮</h1>
+          <p class="spot-hero__subtitle">
+            釜山的海鮮心臟——帝王蟹、鮑魚、干貝在水族箱中活跳跳。
+            現買現殺現吃最新鮮的漁港滋味，是釜山行的必訪味蕾冒險。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-detail">
+      <div class="container">
+        <div class="spot-detail__inner">
+          <div class="spot-detail__main fade-in">
+            <h3>韓國最大海鮮市場</h3>
+            <p>
+              札嘎其市場是韓國最大規模的海鮮集散地，已有超過70年歷史。
+              超過300家攤商雲集於此，帝王蟹在水族箱中張牙舞爪，
+              碩大的鮑魚堆疊成山，干貝閃爍著光澤——走進市場的那一刻，
+              海洋的氣息便迎面而來，這是釜山最具代表性的庶民風景。
+            </p>
+            <p>
+              每天清晨，討海人將最新鮮的漁獲直送至此，
+              新鮮度與價格都是韓國之最。旅客可以在此體驗最道地的
+              「現買現吃」海鮮文化，是釜山自由行不可錯過的行程。
+            </p>
+
+            <h3>現買現吃攻略</h3>
+            <p>
+              正確流程是：先在一樓選定海鮮，與攤商議價後，再上二樓找店家代為烹調。
+              推薦必點：醬油醃活帝王蟹、鮮切鮑魚刺身、海鞘拌飯與干貝燒烤。
+              膽大一點的話，可以挑戰活生生的海鞘——味道鮮美，是釜山限定體驗。
+            </p>
+
+            <h3>推薦時段</h3>
+            <p>
+              清晨5至8點是批發時段，觀光客較少，價格也較實惠。
+              建議上午前往，不僅能選到最新鮮的漁獲，
+              也能觀察釜山討海人最真实的日常風景。
+            </p>
+          </div>
+
+          <aside class="spot-sidebar fade-in">
+            <div class="spot-info-card">
+              <div class="spot-info-card__title">
+                <span>🐙</span> 基本資訊
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📍</div>
+                <div>
+                  <div class="spot-info-item__label">地址</div>
+                  <div class="spot-info-item__value">釜山廣域市中區札嘎其洞</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">💰</div>
+                <div>
+                  <div class="spot-info-item__label">人均消費</div>
+                  <div class="spot-info-item__value">約 30,000〜80,000 韓元</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🕐</div>
+                <div>
+                  <div class="spot-info-item__label">開放時間</div>
+                  <div class="spot-info-item__value">約 5:00〜22:00（依店家而異）</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🚇</div>
+                <div>
+                  <div class="spot-info-item__label">交通方式</div>
+                  <div class="spot-info-item__value">地鐵1號線「札嘎其」站步行3分鐘</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📅</div>
+                <div>
+                  <div class="spot-info-item__label">最佳時段</div>
+                  <div class="spot-info-item__value">清晨至中午（最新鮮）</div>
+                </div>
+              </div>
+              <div style="margin-top: 20px;">
+                <a href="index.html" class="btn btn--primary" style="width: 100%; justify-content: center;">
+                  ← 返回首頁
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="spot-detail-nav fade-in">
+          <a href="#ohbansang" class="spot-nav-btn">下一個：伍班長烤肉 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ -->
+  <!-- FOOD 2: 豬肉湯飯 -->
+  <!-- ================================================================ -->
+  <section class="spot-section" id="galchi-gukbap">
+    <div class="spot-hero">
+      <div class="spot-hero__bg">
+        <img src="images/food/food_02.jpg" alt="釜山豬肉湯飯" loading="lazy">
+      </div>
+      <div class="spot-hero__overlay"></div>
+      <div class="container">
+        <div class="spot-hero__content">
+          <p class="spot-hero__eyebrow">Food 02 / 五大美食</p>
+          <h1 class="spot-hero__title">豬肉湯飯</h1>
+          <p class="spot-hero__subtitle">
+            釜山人的靈魂早餐——清澈的大骨湯底配上軟嫩的豬肉片，
+            免費續碗吃到飽，搭配蝦醬與韭菜，就是最道地的釜山滋味。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-detail">
+      <div class="container">
+        <div class="spot-detail__inner">
+          <div class="spot-detail__main fade-in">
+            <h3>釜山人的早餐靈魂</h3>
+            <p>
+              說到釜山美食，豬肉湯飯（Galchi Gukbap）絕對是代表之一。
+              這道料理起源於釜山港的碼頭工人——清晨工作前需要一碗暖胃的湯飯，
+              久而久之成為釜山人專屬的早餐文化，流傳至今超過半個世紀。
+            </p>
+            <p>
+              潔白的豬肉片鋪在米飯上，注入清澈的大骨湯，最後以韭菜與蝦醬調味。
+              湯底看似清淡，卻有著深厚的大骨甘甜，配上蝦醬的鮮味，層次豐富。
+              免費續湯的服務是標配，讓你吃好吃滿。
+            </p>
+
+            <h3>推薦吃法</h3>
+            <p>
+              先喝一口原味湯，感受大骨的清甜。再依個人口味加入蝦醬攪拌，
+              湯色會變成淡淡的橘紅色，鮮味瞬間提升。
+              最後把附上的泡菜與韭菜一同入湯，是釜山人在地的吃法。
+            </p>
+
+            <h3>人氣店家推薦</h3>
+            <p>
+              海雲台市場內有多家歷史悠久的老店，
+              清晨五點就開始營業，是體驗釜山早餐文化的最佳去處。
+              建議避開觀光客聚集的店家，往巷弄裡找當地人多的老店，
+              通常更正宗、價格也更實惠。
+            </p>
+          </div>
+
+          <aside class="spot-sidebar fade-in">
+            <div class="spot-info-card">
+              <div class="spot-info-card__title">
+                <span>🍲</span> 基本資訊
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📍</div>
+                <div>
+                  <div class="spot-info-item__label">推薦地點</div>
+                  <div class="spot-info-item__value">海雲台市場、札嘎其周邊</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">💰</div>
+                <div>
+                  <div class="spot-info-item__label">人均消費</div>
+                  <div class="spot-info-item__value">約 8,000〜12,000 韓元</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🕐</div>
+                <div>
+                  <div class="spot-info-item__label">開放時間</div>
+                  <div class="spot-info-item__value">約 5:00〜15:00（多為早餐時段）</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🚇</div>
+                <div>
+                  <div class="spot-info-item__label">交通方式</div>
+                  <div class="spot-info-item__value">地鐵2號線「海雲台」站步行5分鐘</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📅</div>
+                <div>
+                  <div class="spot-info-item__label">最佳時段</div>
+                  <div class="spot-info-item__value">清晨至中午（早餐限定）</div>
+                </div>
+              </div>
+              <div style="margin-top: 20px;">
+                <a href="#jagalchi-food" class="spot-nav-btn spot-nav-btn--back" style="width: 100%; justify-content: center; margin-bottom: 10px; display: flex;">
+                  ← 上一個：札嘎其海鮮
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="spot-detail-nav fade-in">
+          <a href="#jagalchi-food" class="spot-nav-btn">← 札嘎其海鮮</a>
+          <a href="#heukseong" class="spot-nav-btn">下一個：黑熔拉手麵 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ -->
+  <!-- FOOD 3: 黑熔拉手麵 -->
+  <!-- ================================================================ -->
+  <section class="spot-section" id="heukseong">
+    <div class="spot-hero">
+      <div class="spot-hero__bg">
+        <img src="images/food/food_03.jpg" alt="黑熔拉手麵" loading="lazy">
+      </div>
+      <div class="spot-hero__overlay"></div>
+      <div class="container">
+        <div class="spot-hero__content">
+          <p class="spot-hero__eyebrow">Food 03 / 五大美食</p>
+          <h1 class="spot-hero__title">黑熔拉手麵</h1>
+          <p class="spot-hero__subtitle">
+            釜山特有的手拉麵條，勁道Q彈配上浓郁的海鮮辣湯，
+            這是釜山人從小吃到大的靈魂味蕾，也是釜山麵食文化的代表作。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-detail">
+      <div class="container">
+        <div class="spot-detail__inner">
+          <div class="spot-detail__main fade-in">
+            <h3>手工現拉的釜山靈魂</h3>
+            <p>
+              黑熔拉手麵（Heukseong Rameun Guksu）是釜山特有的麵食文化。
+              不同于機器製麵，手拉麵條的製作全靠師傅的力道與手感，
+              麵條較粗、斷面呈不規則圓形，咬下去Q彈有勁，吸附滿滿的湯汁精華。
+            </p>
+            <p>
+              湯底通常以海鮮（蛤蜊、蝦子）與辣椒粉熬煮，
+              呈現橘紅色，散發濃郁的海洋鮮香與微辣的後勁。
+              秋天微涼的天氣裡，來一碗熱呼呼的辣湯拉手麵，從胃暖到心。
+            </p>
+
+            <h3>在地人的吃法</h3>
+            <p>
+              釜山人吃拉手麵，一定會配上一份「煎餅」（海鮮煎餅或豬肉煎餅）。
+              辣中帶甜的湯麵配上外酥內軟的煎餅，是最道地的釜山Combo。
+              有些老店還提供免費加麵服務，食量大的旅人千萬別錯過。
+            </p>
+
+            <h3>推薦店家</h3>
+            <p>
+              海雲台與廣安里周邊有許多口碑老店，
+              建議跟隨在地人的腳步，找那種外觀不起眼但排隊人潮不斷的小店。
+              通常菜單只有兩三樣，品項越少代表越專業，味道也越道地。
+            </p>
+          </div>
+
+          <aside class="spot-sidebar fade-in">
+            <div class="spot-info-card">
+              <div class="spot-info-card__title">
+                <span>🥢</span> 基本資訊
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📍</div>
+                <div>
+                  <div class="spot-info-item__label">推薦地點</div>
+                  <div class="spot-info-item__value">海雲台區、廣安里周邊</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">💰</div>
+                <div>
+                  <div class="spot-info-item__label">人均消費</div>
+                  <div class="spot-info-item__value">約 8,000〜15,000 韓元</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🕐</div>
+                <div>
+                  <div class="spot-info-item__label">開放時間</div>
+                  <div class="spot-info-item__value">約 11:00〜21:00（依店家而異）</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🚇</div>
+                <div>
+                  <div class="spot-info-item__label">交通方式</div>
+                  <div class="spot-info-item__value">地鐵2號線「海雲台」站步行7分鐘</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📅</div>
+                <div>
+                  <div class="spot-info-item__label">最佳時段</div>
+                  <div class="spot-info-item__value">午餐、晚餐皆宜</div>
+                </div>
+              </div>
+              <div style="margin-top: 20px;">
+                <a href="#galchi-gukbap" class="spot-nav-btn spot-nav-btn--back" style="width: 100%; justify-content: center; margin-bottom: 10px; display: flex;">
+                  ← 上一個：豬肉湯飯
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="spot-detail-nav fade-in">
+          <a href="#galchi-gukbap" class="spot-nav-btn">← 豬肉湯飯</a>
+          <a href="#milyang" class="spot-nav-btn">下一個：密陽血腸 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ -->
+  <!-- FOOD 4: 密陽血腸 -->
+  <!-- ================================================================ -->
+  <section class="spot-section" id="milyang">
+    <div class="spot-hero">
+      <div class="spot-hero__bg">
+        <img src="images/food/food_04.jpg" alt="密陽血腸豬肉湯" loading="lazy">
+      </div>
+      <div class="spot-hero__overlay"></div>
+      <div class="container">
+        <div class="spot-hero__content">
+          <p class="spot-hero__eyebrow">Food 04 / 五大美食</p>
+          <h1 class="spot-hero__title">密陽血腸豬肉湯</h1>
+          <p class="spot-hero__subtitle">
+            起源於慶尚南道密陽的傳統美食，韓藥燉煮的濃郁豬肉湯底，
+            配上手工血腸與五花肉，養生又暖胃，是釜山人秋冬季的最愛。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-detail">
+      <div class="container">
+        <div class="spot-detail__inner">
+          <div class="spot-detail__main fade-in">
+            <h3>韓藥燉煮的傳統滋味</h3>
+            <p>
+              密陽血腸豬肉湯（Milyang Soegganjuk Gogbap）是起源於慶尚南道密陽的
+              傳統美食，後來傳入釜山並廣受喜愛。湯底以猪大骨與多種韓方藥材
+              （人蔘、當歸、枸杞、紅棗）慢火燉煮數小時，
+              湯色呈現淡淡的琥珀色，散發著濃郁的藥膳香氣。
+            </p>
+            <p>
+              手工血腸的製作相當費工——將豬血與糯米、蔬菜混合後灌入豬腸，
+              切成厚片與五花肉一同上桌。血腸的口感Q彈軟糯，
+              吸附了滿滿的藥膳湯汁，一口咬下層次分明。
+            </p>
+
+            <h3>為什麼適合秋天？</h3>
+            <p>
+              秋天的釜山早晚溫差大，來一碗溫熱的藥膳湯飯，
+              不只暖胃更有滋補效果。血腸富含蛋白質與鐵質，
+              配上人蔘、當歸的湯底，是最適合秋天養生的釜山代表美食之一。
+            </p>
+
+            <h3>推薦吃法</h3>
+            <p>
+              先品嚐原味的藥膳湯，感受溫潤的草本香氣與大骨鮮甜。
+              再把血腸與五花肉沾取蝦醬一同入口，鮮味與藥香交織。
+              最後把白飯倒入湯中，變成一道豪華的湯泡飯，連湯帶料吃乾抹淨。
+            </p>
+          </div>
+
+          <aside class="spot-sidebar fade-in">
+            <div class="spot-info-card">
+              <div class="spot-info-card__title">
+                <span>🩸</span> 基本資訊
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📍</div>
+                <div>
+                  <div class="spot-info-item__label">推薦地點</div>
+                  <div class="spot-info-item__value">釜山站周邊、南浦洞</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">💰</div>
+                <div>
+                  <div class="spot-info-item__label">人均消費</div>
+                  <div class="spot-info-item__value">約 12,000〜18,000 韓元</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🕐</div>
+                <div>
+                  <div class="spot-info-item__label">開放時間</div>
+                  <div class="spot-info-item__value">約 10:00〜22:00</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🚇</div>
+                <div>
+                  <div class="spot-info-item__label">交通方式</div>
+                  <div class="spot-info-item__value">地鐵1號線「釜山站」步行5分鐘</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📅</div>
+                <div>
+                  <div class="spot-info-item__label">最佳時段</div>
+                  <div class="spot-info-item__value">秋季、冬季（溫補養生）</div>
+                </div>
+              </div>
+              <div style="margin-top: 20px;">
+                <a href="#heukseong" class="spot-nav-btn spot-nav-btn--back" style="width: 100%; justify-content: center; margin-bottom: 10px; display: flex;">
+                  ← 上一個：黑熔拉手麵
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="spot-detail-nav fade-in">
+          <a href="#heukseong" class="spot-nav-btn">← 黑熔拉手麵</a>
+          <a href="#ohbansang" class="spot-nav-btn">下一個：伍班長烤肉 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ -->
+  <!-- FOOD 5: 伍班長烤肉 -->
+  <!-- ================================================================ -->
+  <section class="spot-section" id="ohbansang">
+    <div class="spot-hero">
+      <div class="spot-hero__bg">
+        <img src="images/food/food_05.jpg" alt="伍班長烤肉" loading="lazy">
+      </div>
+      <div class="spot-hero__overlay"></div>
+      <div class="container">
+        <div class="spot-hero__content">
+          <p class="spot-hero__eyebrow">Food 05 / 五大美食</p>
+          <h1 class="spot-hero__title">伍班長烤肉</h1>
+          <p class="spot-hero__subtitle">
+            釜山老字號烤肉店，以低溫熟成技術鎖住牛肉的鮮甜，
+            銅盤烤肉的經典滋味，是釜山人帶朋友品嚐美味的不二選擇。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-detail">
+      <div class="container">
+        <div class="spot-detail__inner">
+          <div class="spot-detail__main fade-in">
+            <h3>釜山老字號的驕傲</h3>
+            <p>
+              伍班長烤肉（Oh Bansaang）是有著數十年歷史的釜山老字號烤肉店，
+              以嚴選的韓國產牛肉與獨特的低溫熟成技術聞名。
+              不同於一般烤肉店的快速高溫燒烤，伍班長採用銅盤慢慢烤，
+              讓肉汁在緩慢的溫度中完整釋放，保留牛肉最原始的鮮甜。
+            </p>
+            <p>
+              五花肉在銅盤上滋滋作響，油脂緩緩滴落，兩面烤至金黃微焦，
+              剪成小塊後沾取特製的大醬或醬油，入口即化。
+              搭配免費提供的蒜片、辣椒、泡菜與生菜，層次豐富。
+            </p>
+
+            <h3>必點推薦</h3>
+            <p>
+              除了招牌五花肉之外，鹽烤牛五花與調味牛排也是人氣選擇。
+              最後推薦用剩下的肉汁精華，來一份炒飯——將白飯、
+              海苔、蛋黃與肉汁拌炒，是完美的句點。
+            </p>
+
+            <h3>適合的場合</h3>
+            <p>
+              伍班長烤肉適合與三五好友或家人一起享用，
+              氣氛熱絡、份量十足，是體驗釜山夜生活的最佳方式之一。
+              建議提前預約，尤其在秋季旅遊旺季時段，
+              現場排隊可能需要等候30分鐘以上。
+            </p>
+          </div>
+
+          <aside class="spot-sidebar fade-in">
+            <div class="spot-info-card">
+              <div class="spot-info-card__title">
+                <span>🥩</span> 基本資訊
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📍</div>
+                <div>
+                  <div class="spot-info-item__label">推薦地點</div>
+                  <div class="spot-info-item__value">西面站、廣安里周邊</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">💰</div>
+                <div>
+                  <div class="spot-info-item__label">人均消費</div>
+                  <div class="spot-info-item__value">約 20,000〜35,000 韓元</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🕐</div>
+                <div>
+                  <div class="spot-info-item__label">開放時間</div>
+                  <div class="spot-info-item__value">約 12:00〜23:00</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">🚇</div>
+                <div>
+                  <div class="spot-info-item__label">交通方式</div>
+                  <div class="spot-info-item__value">地鐵1號線/2號線「西面」站步行3分鐘</div>
+                </div>
+              </div>
+              <div class="spot-info-item">
+                <div class="spot-info-item__icon">📅</div>
+                <div>
+                  <div class="spot-info-item__label">最佳時段</div>
+                  <div class="spot-info-item__value">晚餐（建議提前預約）</div>
+                </div>
+              </div>
+              <div style="margin-top: 20px;">
+                <a href="#milyang" class="spot-nav-btn spot-nav-btn--back" style="width: 100%; justify-content: center; margin-bottom: 10px; display: flex;">
+                  ← 上一個：密陽血腸
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="spot-detail-nav fade-in">
+          <a href="#milyang" class="spot-nav-btn">← 密陽血腸</a>
+          <a href="index.html" class="spot-nav-btn" style="background: var(--primary); color: #fff; border-color: var(--primary);">
+            ← 返回首頁
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">
+            <span class="dot"></span>
+            秋日釜山
+          </div>
+          <p class="footer__brand-desc">
+            探索釜山海港與秋色的交匯點。
+            從甘川文化村的彩虹階梯到海雲台的湛藍海岸，
+            這裡記錄著釜山最動人的故事。
+          </p>
+        </div>
+        <div>
+          <div class="footer__col-title">快速連結</div>
+          <div class="footer__links">
+            <a href="index.html">首頁</a>
+            <a href="spots.html">景點探索</a>
+            <a href="food.html">美饌探索</a>
+            <a href="index.html#about-section">關於釜山</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">探索美食</div>
+          <div class="footer__links">
+            <a href="#jagalchi-food">札嘎其海鮮</a>
+            <a href="#galchi-gukbap">豬肉湯飯</a>
+            <a href="#heukseong">黑熔拉手麵</a>
+            <a href="#milyang">密陽血腸</a>
+            <a href="#ohbansang">伍班長烤肉</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 秋日釜山 <span class="footer__accent">|</span> 釜山旅遊導覽</span>
+        <span>設計 by 網頁設計工程師</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

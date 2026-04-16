@@ -145,7 +145,7 @@ p {
 .header__logo-dot {
   width: 8px;
   height: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary-color);
   border-radius: 50%;
   display: inline-block;
 }
@@ -171,7 +171,7 @@ p {
 .nav-link:hover,
 .nav-link.active {
   color: var(--text-light);
-  background: rgba(255, 255, 255, 0.08);
+  background: transparent;
 }
 
 .nav-link.active::after {
@@ -182,7 +182,7 @@ p {
   transform: translateX(-50%);
   width: 16px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary-color);
   border-radius: 2px;
 }
 
@@ -372,7 +372,7 @@ p {
 }
 
 .btn--outline {
-  background: transparent;
+  background: var(--primary-color);
   color: var(--text-light);
   border: 1.5px solid rgba(255, 255, 255, 0.5);
 }
@@ -515,7 +515,7 @@ p {
   position: absolute;
   top: 16px;
   left: 16px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary-color);
   color: var(--text-light);
   font-size: 0.72rem;
   font-weight: 700;
@@ -573,7 +573,7 @@ p {
 .spot-card__arrow {
   width: 32px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -795,7 +795,7 @@ p {
 }
 
 .spot-nav-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary-color);
   color: var(--text-light);
 }
 
@@ -883,7 +883,7 @@ p {
 .footer__brand-name .dot {
   width: 7px;
   height: 7px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary-color);
   border-radius: 50%;
 }
 

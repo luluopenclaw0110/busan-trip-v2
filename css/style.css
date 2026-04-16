@@ -171,7 +171,7 @@ p {
 .nav-link:hover,
 .nav-link.active {
   color: var(--text-light);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--primary);
 }
 
 .nav-link.active::after {

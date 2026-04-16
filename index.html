@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秋日釜山 | 釜山旅遊官方網站</title>
+  <meta name="description" content="秋日釜山深度旅遊攻略。甘川文化村、廣安里海水浴場、海雲台膠囊列車，完整釜山景點、美食、住宿指南。">
+  <meta name="theme-color" content="#0077B6">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230077B6'/><text y='.9em' font-size='80' x='50%' text-anchor='middle'>釜</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <span class="header__logo-dot"></span>
+          秋日釜山
+        </a>
+
+        <nav class="header__nav" id="headerNav">
+          <a href="index.html" class="nav-link active">首頁</a>
+          <a href="spots.html" class="nav-link">景點探索</a>
+          <a href="restaurants.html" class="nav-link">美饌探索</a>
+          <a href="#about-section" class="nav-link">關於釜山</a>
+          <a href="spots.html" class="nav-cta">開始探索</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/spots/spot_01.jpg"
+           alt="釜山城市與海景"
+           loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Busan, South Korea</p>
+      <h1 class="hero__title">秋日釜山</h1>
+      <p class="hero__subtitle">
+        海風吹拂的港都，秋色暈染的街巷。<br>
+        走進釜山，感受韓國最溫暖的秋天。
+      </p>
+      <div class="hero__actions">
+        <a href="spots.html" class="btn btn--primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          探索景點
+        </a>
+        <a href="#spots-section" class="btn btn--outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          </svg>
+          精選介紹
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT / INTRO ===================== -->
+  <section class="section section--cream" id="about-section">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__tag">About Busan</span>
+        <h2 class="section__title">釜山，韓國的海之城</h2>
+        <div class="divider" style="margin-bottom: 20px;"></div>
+        <p class="section__desc">
+          釜山是韓國第二大城市，坐落於朝鮮半島南端，三面環海，海岸線綿延超過200公里。
+          從繁華的BIFF廣場到靜謐的太宗台，從新潮的膠囊列車到傳統的札嘎其市場——
+          這座港都每一處轉角，都有不同的風景等待被發現。
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; margin-top: 48px;"
+           class="fade-in stats-grid">
+        <div>
+          <div style="font-family: var(--font-serif); font-size: 2.8rem; font-weight: 900; color: var(--primary);">200+</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500; letter-spacing: 0.05em;">公里海岸線</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-serif); font-size: 2.8rem; font-weight: 900; color: var(--primary);">1400+</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500; letter-spacing: 0.05em;">年歷史港都</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-serif); font-size: 2.8rem; font-weight: 900; color: var(--primary);">5</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500; letter-spacing: 0.05em;">大精選景點</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-serif); font-size: 2.8rem; font-weight: 900; color: var(--primary);">3500萬+</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500; letter-spacing: 0.05em;">年訪人次</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SPOTS GRID ===================== -->
+  <section class="section" id="spots-section">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__tag">Spotlight</span>
+        <h2 class="section__title">探索釜山</h2>
+        <div class="divider" style="margin-bottom: 20px;"></div>
+        <p class="section__desc">
+          從彩虹階梯的甘川文化村到海岸線上的天空膠囊，<br>
+          釜山的每一處風景，都在訴說港都專屬的故事。
+        </p>
+      </div>
+
+      <div class="spots-grid">
+        <!-- Featured: 甘川文化村 -->
+        <a href="spots.html#gamagol" class="spot-card spot-card--featured fade-in">
+          <div class="spot-card__image">
+            <img src="images/spots/spot_03.jpg" alt="甘川文化村" loading="lazy">
+            <span class="spot-card__badge">Featured</span>
+          </div>
+          <div class="spot-card__content">
+            <div class="spot-card__icon">🎨</div>
+            <h3 class="spot-card__title">甘川文化村</h3>
+            <p class="spot-card__desc">
+              曾是避難住宅區的小丘，如今蛻變成韓國最繽紛的藝術村。
+              穿梭在彩虹階梯與童話壁畫之間，每一步都有驚喜等著被探索。
+            </p>
+            <div class="spot-card__footer">
+              <span class="spot-card__tag">文化藝術</span>
+              <div class="spot-card__arrow">→</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 海雲台 -->
+        <a href="spots.html#haeundae" class="spot-card fade-in">
+          <div class="spot-card__image">
+            <img src="images/spots/spot_05.jpg" alt="海雲台海水浴場" loading="lazy">
+            <span class="spot-card__badge">海灘</span>
+          </div>
+          <div class="spot-card__content">
+            <div class="spot-card__icon">🌊</div>
+            <h3 class="spot-card__title">海雲台海水浴場</h3>
+            <p class="spot-card__desc">
+              釜山最具代表性的海岸，夏日人潮洶湧，秋冬則回歸靜謐。
+              與海雲台市場僅一路之隔，遊客可同時感受沙灘與道地美食的雙重魅力。
+            </p>
+            <div class="spot-card__footer">
+              <span class="spot-card__tag">海岸風光</span>
+              <div class="spot-card__arrow">→</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 廣安里 -->
+        <a href="spots.html#gwangalli" class="spot-card fade-in">
+          <div class="spot-card__image">
+            <img src="images/spots/spot_06.jpg" alt="廣安里海水浴場" loading="lazy">
+            <span class="spot-card__badge">夜景</span>
+          </div>
+          <div class="spot-card__content">
+            <div class="spot-card__icon">🌉</div>
+            <h3 class="spot-card__title">廣安里海水浴場</h3>
+            <p class="spot-card__desc">
+              釜山賞夜景的首選之地——廣安大橋每晚點亮，光影倒映海面，
+              沙灘旁的咖啡街飄來陣陣香氣，是年輕人聚集的潮流聖地。
+            </p>
+            <div class="spot-card__footer">
+              <span class="spot-card__tag">夜景海灘</span>
+              <div class="spot-card__arrow">→</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 膠囊列車 -->
+        <a href="spots.html#capsule" class="spot-card fade-in">
+          <div class="spot-card__image">
+            <img src="images/spots/spot_07.jpg" alt="海岸膠囊列車" loading="lazy">
+            <span class="spot-card__badge">特色體驗</span>
+          </div>
+          <div class="spot-card__content">
+            <div class="spot-card__icon">🚡</div>
+            <h3 class="spot-card__title">海岸膠囊列車</h3>
+            <p class="spot-card__desc">
+              運行於青沙浦與尾浦之間的海岸膠囊車廂，猶如糖果掉落在湛藍海岸上。
+              秋季搭乘，海風微涼，天空湛藍，是釜山最浪漫的體驗之一。
+            </p>
+            <div class="spot-card__footer">
+              <span class="spot-card__tag">海岸鐵道</span>
+              <div class="spot-card__arrow">→</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 札嘎其市場 -->
+        <a href="spots.html#jagalchi" class="spot-card fade-in">
+          <div class="spot-card__image">
+            <img src="images/spots/spot_10.jpg" alt="札嘎其市場" loading="lazy">
+            <span class="spot-card__badge">傳統市場</span>
+          </div>
+          <div class="spot-card__content">
+            <div class="spot-card__icon">🐙</div>
+            <h3 class="spot-card__title">札嘎其市場</h3>
+            <p class="spot-card__desc">
+              韓國最大規模的海鮮市場，攤商超過300家，
+              活跳跳的帝王蟹、章魚、貝類應有盡有。現買現吃的體驗，是釜山行的必訪行程。
+            </p>
+            <div class="spot-card__footer">
+              <span class="spot-card__tag">海鮮美食</span>
+              <div class="spot-card__arrow">→</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESTAURANT TEASER ===================== -->
+  <section class="section" id="food-section">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__tag">Busan Cuisine</span>
+        <h2 class="section__title">釜山美饌圖鑑</h2>
+        <div class="divider" style="margin-bottom: 20px;"></div>
+        <p class="section__desc">
+          從海港現撈的活蟹到市場裡的街頭美味——<br>
+          釜山的滋味，在舌尖上寫下回憶。
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;" class="fade-in food-preview-grid">
+        <a href="restaurants.html#neulsac" class="food-preview-card">
+          <div class="food-preview-card__image">
+            <img src="images/spots/spot_12.jpg" alt="皇帝潛水艇" loading="lazy">
+          </div>
+          <div class="food-preview-card__body">
+            <span class="food-preview-card__tag">🦀 海鮮鍋</span>
+            <h3 class="food-preview-card__title">皇帝潛水艇</h3>
+            <p class="food-preview-card__desc">釜山代表性的海鮮蒸籠鍋，各色海鮮層層堆疊，鮮甜湯頭讓人回味無窮。</p>
+            <div class="food-preview-card__link">探索美食 →</div>
+          </div>
+        </a>
+        <a href="restaurants.html#gwangalli" class="food-preview-card">
+          <div class="food-preview-card__image">
+            <img src="images/spots/spot_14.jpg" alt="廣安里烤肉" loading="lazy">
+          </div>
+          <div class="food-preview-card__body">
+            <span class="food-preview-card__tag">🥩 韓式烤肉</span>
+            <h3 class="food-preview-card__title">廣安里烤肉小巷</h3>
+            <p class="food-preview-card__desc">夜幕下的廣安里，烤肉的香氣彌漫街巷，配上一杯燒酒，完美秋夜。</p>
+            <div class="food-preview-card__link">探索美食 →</div>
+          </div>
+        </a>
+        <a href="restaurants.html#jagalchi" class="food-preview-card">
+          <div class="food-preview-card__image">
+            <img src="images/spots/spot_15.jpg" alt="札嘎其生魚片" loading="lazy">
+          </div>
+          <div class="food-preview-card__body">
+            <span class="food-preview-card__tag">🐟 生魚片</span>
+            <h3 class="food-preview-card__title">札嘎其生魚片中心</h3>
+            <p class="food-preview-card__desc">市場二樓現切生魚片，師傅刀工俐落，旅客現買現吃，感受最道地的海港滋味。</p>
+            <div class="food-preview-card__link">探索美食 →</div>
+          </div>
+        </a>
+        <a href="restaurants.html#milmyeong" class="food-preview-card">
+          <div class="food-preview-card__image">
+            <img src="images/spots/spot_16.jpg" alt="密陽豬肉湯飯" loading="lazy">
+          </div>
+          <div class="food-preview-card__body">
+            <span class="food-preview-card__tag">🍲 豬肉湯飯</span>
+            <h3 class="food-preview-card__title">密陽豬肉湯飯</h3>
+            <p class="food-preview-card__desc">清晨的釜山，從一碗熱騰騰的豬肉湯飯開始。清澈大骨湯配上山蒜與辣醬，暖心又暖胃。</p>
+            <div class="food-preview-card__link">探索美食 →</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;" class="fade-in">
+        <a href="restaurants.html" class="btn btn--primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          </svg>
+          完整美饌圖鑑
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA SECTION ===================== -->
+  <section class="section section--dark">
+    <div class="container--narrow" style="text-align: center;">
+      <div class="fade-in">
+        <span class="section__tag">Let's Go</span>
+        <h2 class="section__title" style="color: #fff; margin-top: 16px; margin-bottom: 20px;">
+          準備好探索釜山了嗎？
+        </h2>
+        <div class="divider" style="margin-bottom: 24px;"></div>
+        <p class="section__desc" style="margin-bottom: 40px;">
+          從彩虹村到海岸線，從海鮮市場到夜晚燈光——<br>
+          釜山的每一處風景，都在等待你的足跡。
+        </p>
+        <a href="spots.html" class="btn btn--primary" style="font-size: 1rem; padding: 16px 40px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+          開啟旅程
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">
+            <span class="dot"></span>
+            秋日釜山
+          </div>
+          <p class="footer__brand-desc">
+            探索釜山海港與秋色的交匯點。
+            從甘川文化村的彩虹階梯到海雲台的湛藍海岸，
+            這裡記錄著釜山最動人的故事。
+          </p>
+        </div>
+        <div>
+          <div class="footer__col-title">快速連結</div>
+          <div class="footer__links">
+            <a href="index.html">首頁</a>
+            <a href="spots.html">景點探索</a>
+            <a href="restaurants.html">美饌探索</a>
+            <a href="#about-section">關於釜山</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">美饌圖鑑</div>
+          <div class="footer__links">
+            <a href="restaurants.html#neulsac">皇帝潛水艇</a>
+            <a href="restaurants.html#gwangalli">廣安里烤肉小巷</a>
+            <a href="restaurants.html#jagalchi">札嘎其生魚片中心</a>
+            <a href="restaurants.html#milmyeong">密陽豬肉湯飯</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">探索景點</div>
+          <div class="footer__links">
+            <a href="spots.html#gamagol">甘川文化村</a>
+            <a href="spots.html#haeundae">海雲台海水浴場</a>
+            <a href="spots.html#gwangalli">廣安里海水浴場</a>
+            <a href="spots.html#capsule">海岸膠囊列車</a>
+            <a href="spots.html#jagalchi">札嘎其市場</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 秋日釜山 <span class="footer__accent">|</span> 釜山旅遊導覽</span>
+        <span>設計 by 網頁設計工程師</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+  <style>
+    @media (max-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+      }
+    }
+
+    /* ===================== FOOD PREVIEW CARDS ===================== */
+    .food-preview-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .food-preview-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      display: grid;
+      grid-template-columns: 140px 1fr;
+    }
+
+    .food-preview-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .food-preview-card__image {
+      height: 140px;
+      overflow: hidden;
+    }
+
+    .food-preview-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .food-preview-card:hover .food-preview-card__image img {
+      transform: scale(1.08);
+    }
+
+    .food-preview-card__body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .food-preview-card__tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .food-preview-card__title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .food-preview-card__desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .food-preview-card__link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .food-preview-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .food-preview-card {
+        grid-template-columns: 100px 1fr;
+      }
+      .food-preview-card__image {
+        height: 110px;
+      }
+    }
+  </style>
+</body>
+</html>

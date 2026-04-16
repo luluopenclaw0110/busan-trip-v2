@@ -145,7 +145,7 @@ p {
 .header__logo-dot {
   width: 8px;
   height: 8px;
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
   display: inline-block;
 }
@@ -171,7 +171,7 @@ p {
 .nav-link:hover,
 .nav-link.active {
   color: var(--text-light);
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-link.active::after {
@@ -182,12 +182,12 @@ p {
   transform: translateX(-50%);
   width: 16px;
   height: 2px;
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 2px;
 }
 
 .nav-cta {
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text-light);
   font-size: 0.85rem;
   font-weight: 700;
@@ -359,7 +359,7 @@ p {
 }
 
 .btn--primary {
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text-light);
   box-shadow: 0 4px 20px rgba(200, 16, 46, 0.4);
 }
@@ -515,7 +515,7 @@ p {
   position: absolute;
   top: 16px;
   left: 16px;
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text-light);
   font-size: 0.72rem;
   font-weight: 700;
@@ -573,7 +573,7 @@ p {
 .spot-card__arrow {
   width: 32px;
   height: 32px;
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -795,7 +795,7 @@ p {
 }
 
 .spot-nav-btn:hover {
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text-light);
 }
 
@@ -850,7 +850,7 @@ p {
 }
 
 .spots-nav__btn.active {
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text-light);
   border-color: var(--primary);
 }
@@ -883,7 +883,7 @@ p {
 .footer__brand-name .dot {
   width: 7px;
   height: 7px;
-  background: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
 }
 
